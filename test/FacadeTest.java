@@ -7,6 +7,9 @@ import Facade.ShapeMaker;
 import org.junit.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+import static junit.framework.Assert.assertEquals;
+
+//import org.junit.Test;
 
 
 /**
@@ -26,7 +29,7 @@ public class FacadeTest {
 
         System.setOut(System.out);
 
-        assertEquals("Circle.draw()\n", outContent.toString());
+        assertEquals("Circle::draw()\n", outContent.toString());
     }
 
     @Test
@@ -55,10 +58,7 @@ public class FacadeTest {
         shapeMaker.drawSquare();
 
         System.setOut(System.out);
-        assertEquals("Square.draw()\n", outContent.toString());
+        assertEquals("Square::draw()\n", outContent.toString());
     }
 
-    private void assertEquals(String circledraw, String toString) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 }

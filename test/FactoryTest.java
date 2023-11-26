@@ -4,6 +4,9 @@ import Factory.Shape;
 import Factory.Square;
 import Factory.Rectangle;
 import Factory.ShapeFactory;
+import static junit.framework.Assert.assertNotNull;
+import static junit.framework.Assert.assertTrue;
+import org.junit.Test;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -42,14 +45,6 @@ public class FactoryTest {
 
         assertNotNull(rectangle);
         assertTrue(rectangle instanceof Rectangle);
-    }
-
-    private void assertNotNull(Shape rectangle) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    private void assertTrue(boolean b) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
 

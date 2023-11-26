@@ -2,7 +2,10 @@
 import Singleton.SingleObject;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertSame;
 import org.junit.Test;
+
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -35,8 +38,5 @@ public class SingletonTest {
         assertEquals("Hello world!\n", outContent.toString());
     }
 
-    private void assertEquals(String hello_world, String toString) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
     
 }
